@@ -4,29 +4,40 @@ html {
 }
 body {
     font-family: 'Inter', sans-serif;
+    /* Lighter Light mode body background */
+    background-color: #F8FAFC; /* Tailwind gray-50 */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .dark-mode {
-    background-color: #1a202c; /* Dark background */
-    color: #e2e8f0; /* Light text */
+    /* Lighter Dark mode body background */
+    background-color: #1F2937; /* Tailwind gray-800 */
+    color: #E2E8F0; /* Light text for dark mode */
 }
 .dark-mode .bg-white {
-    background-color: #2d3748; /* Darker card background */
+    /* Header/card background in dark mode - adjusted to be lighter */
+    background-color: #374151; /* Tailwind gray-700 */
+}
+.dark-mode .text-gray-900 {
+    color: #E2E8F0; /* Light text for dark mode headings */
+}
+.dark-mode .text-gray-700 {
+    color: #CBD5E0; /* Lighter text for dark mode paragraphs */
 }
 .dark-mode .text-gray-800 {
-    color: #e2e8f0;
+    color: #CBD5E0; /* Lighter text for dark mode inner content */
 }
 .dark-mode .text-gray-600 {
-    color: #cbd5e0;
+    color: #94A3B8; /* Even lighter text for dark mode small print */
 }
 .dark-mode .border-gray-200 {
-    border-color: #4a5568;
+    border-color: #4B5563; /* Darker border in dark mode - adjusted to be lighter */
 }
 .dark-mode .hover\:bg-gray-100:hover {
-    background-color: #4a5568;
+    background-color: #4B5563; /* Darker hover in dark mode - adjusted to be lighter */
 }
-.dark-mode .focus\:ring-indigo-500:focus {
-    --tw-ring-color: #6366f1; /* Adjust ring color for dark mode */
+/* Accent color for focus rings in dark mode */
+.dark-mode .focus\:ring-cyan-600:focus {
+    --tw-ring-color: #06B6D4; /* Tailwind cyan-500 */
 }
 /* Subtle hover effect for navigation links */
 .nav-link:hover {
