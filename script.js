@@ -1,4 +1,4 @@
-// JavaScript for Dark Mode Toggle
+// JavaScript for Dark Mode 
 const darkModeToggle = document.getElementById('darkModeToggle');
 const body = document.body;
 
@@ -9,7 +9,7 @@ if (localStorage.getItem('darkMode') === 'enabled') {
 
 darkModeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
-    // Save preference to localStorage
+    // Save preference 
     if (body.classList.contains('dark-mode')) {
         localStorage.setItem('darkMode', 'enabled');
     } else {
@@ -21,19 +21,3 @@ darkModeToggle.addEventListener('click', () => {
 const contactForm = document.getElementById('contactForm');
 const formMessage = document.getElementById('formMessage');
 
-contactForm.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent actual form submission
-
-    // In a real application, you would send this data to a backend server
-    // For a static portfolio, we'll just show a success message
-    // You could integrate with services like Formspree.io or Netlify Forms for actual email sending
-
-    formMessage.textContent = 'Thank you for your message! I will get back to you soon.';
-    formMessage.classList.remove('hidden');
-    contactForm.reset(); // Clear the form
-    
-    // Hide message after a few seconds
-    setTimeout(() => {
-        formMessage.classList.add('hidden');
-    }, 5000);
-});

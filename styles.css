@@ -1,50 +1,48 @@
-/* Custom styles for smooth scrolling and basic animations */
+
 html {
     scroll-behavior: smooth;
 }
 body {
     font-family: 'Inter', sans-serif;
-    /* Lighter Light mode body background */
-    background-color: #F8FAFC; /* Tailwind gray-50 */
+    background-color: #F8FAFC;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 .dark-mode {
-    /* Lighter Dark mode body background */
-    background-color: #1F2937; /* Tailwind gray-800 */
-    color: #E2E8F0; /* Light text for dark mode */
+    
+    background-color: #1F2937;
+    color: #E2E8F0;
 }
 .dark-mode .bg-white {
-    /* Header/card background in dark mode - adjusted to be lighter */
-    background-color: #374151; /* Tailwind gray-700 */
+    background-color: #374151;
 }
 .dark-mode .text-gray-900 {
-    color: #E2E8F0; /* Light text for dark mode headings */
+    color: #E2E8F0;
 }
 .dark-mode .text-gray-700 {
-    color: #CBD5E0; /* Lighter text for dark mode paragraphs */
+    color: #CBD5E0;
 }
 .dark-mode .text-gray-800 {
-    color: #CBD5E0; /* Lighter text for dark mode inner content */
+    color: #CBD5E0;
 }
 .dark-mode .text-gray-600 {
-    color: #94A3B8; /* Even lighter text for dark mode small print */
+    color: #94A3B8;
 }
 .dark-mode .border-gray-200 {
-    border-color: #4B5563; /* Darker border in dark mode - adjusted to be lighter */
+    border-color: #4B5563;
 }
 .dark-mode .hover\:bg-gray-100:hover {
-    background-color: #4B5563; /* Darker hover in dark mode - adjusted to be lighter */
+    background-color: #4B5563;
 }
-/* Accent color for focus rings in dark mode */
+
 .dark-mode .focus\:ring-cyan-600:focus {
-    --tw-ring-color: #06B6D4; /* Tailwind cyan-500 */
+    --tw-ring-color: #06B6D4;
 }
-/* Subtle hover effect for navigation links */
+
 .nav-link:hover {
     transform: translateY(-2px);
     transition: transform 0.2s ease-in-out;
 }
-/* Project card hover effect */
+
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
